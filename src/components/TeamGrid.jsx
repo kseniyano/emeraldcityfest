@@ -1,0 +1,88 @@
+    import React, { useEffect, useState } from "react";
+
+    const parsePlayers = (playerString) => {
+        if (!playerString || typeof playerString !== "string") return [];
+
+        return playerString.split("_").map((entry) => {
+            if (!entry.includes(":")) return { id: "", name: entry.trim() }; // fallback
+
+            const [id, name] = entry.split(":");
+            return {
+            id: id?.trim() || "",
+            name: name?.trim() || "",
+            };
+        });
+        };
+
+    const TeamGrid = () => {
+    const [teams, setTeams] = useState([]);
+
+    useEffect(() => {
+        fetch(
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1noqIuaJOQd0rxcddL2_7YTJysA1cmRMiLmD1brhL7hadcgn5WVo6JxV7g1v5M55Q2_GIaeFrwPov/pub?gid=0&single=true&output=csv"
+        )
+        .then((res) => res.text())
+        .then((csv) => {
+            const lines = csv.trim().split("\n");
+            const headers = lines[0].split(",");
+
+            const result = lines
+            .slice(1)
+            .map((line, lineIndex) => {
+                const values = line.split(",");
+                const entry = {};
+
+                headers.forEach((h, i) => {
+                const header = h?.trim() ?? "";
+                const value = values[i]?.trim() ?? "";
+                entry[header] = value;
+                });
+
+                if (!entry.name && !entry.city && !entry.players) {
+                console.warn(`Skipping empty row at index ${lineIndex + 2}`);
+                return null;
+                }
+
+                return {
+                id: entry.id,
+                name: entry.name,
+                city: entry.city,
+                icons: entry.icons,
+                players: parsePlayers(entry.players),
+                deposit: entry.deposit,
+                fee: entry.fee,
+                };
+            })
+            .filter(Boolean);
+
+            setTeams(result);
+        });
+    }, []);
+
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {teams.map((team, index) => (
+        <div key={index} className="p-6 border rounded-2xl border-primary-300">
+          <h4 className="text-xl font-semibold">{team.id}. {team.name}</h4>
+          <div className="flex w-full justify-between items-center mb-6">
+            <h5 className="text-accent">{team.city}</h5>
+            <div>{team.icons}</div>
+          </div>
+          <ul>
+            {team.players.map((player, idx) => (
+              <ol key={idx} className={idx === 0 ? "font-bold" : ""}>
+                <div className="flex gap-4">
+                  <p className="min-w-7ch text-right">{player.id}</p>
+                  <p>{player.name}</p>
+                </div>
+              </ol>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default TeamGrid;

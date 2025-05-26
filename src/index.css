@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  :root {
+    font-family: "Carlito", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+
+    @apply text-primary-900 bg-neutral-light;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  #root{
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  }
+
+  a {
+    @apply text-accent hover:text-emerald;
+  }
+
+  h1 {
+    font-family: "El Messiri";
+    font-size: 7rem;
+    line-height: 1;
+  }
+  h2 {
+    font-family: "Carlito";
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  h3 {
+    font-family: "Carlito";
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  h4 {
+    font-family: "Carlito";
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  h5 {
+    font-family: "Carlito";
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+  h6 {
+    font-family: "Carlito";
+    font-size: 0.875rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+}
+
+@layer components{
+  .menu-item{
+    font-size: 1.25rem;
+    line-height: 1.2;
+    @apply text-primary-900 hover:text-accent;
+  }
+  .logo-text{
+    font-family: "El Messiri";
+    @apply text-3xl font-bold text-emerald hover:text-accent;
+  }
+  .container-width{
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    position: relative;
+  }
+  .btn{
+    @apply bg-accent py-8 px-16 rounded-full 
+    text-center text-neutral-light text-2xl font-bold 
+    hover:text-neutral-light 
+    hover:bg-emerald_dark transition-colors;
+  }
+
+  .hero-image {
+  position: absolute;
+  height: 100vh;
+  left: calc(35vw - (100vh * 1.4) * 0.35); /* 35% of 1000px = 350px */
+  object-fit: cover;
+  transition: transform 0.1s ease-out;
+  }
+
+}
+
+@layer utilities{
+  .grow-2{
+    flex-grow: 2;
+  }
+  .grow-1{
+    flex-grow: 1;
+  }
+  .grow-3{
+    flex-grow: 3;
+  }
+  .grow-5{
+    flex-grow: 5;
+  }
+  .min-w-7ch{
+    min-width: 7ch;
+  }
+  .text-32{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
