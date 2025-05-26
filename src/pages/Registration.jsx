@@ -1,4 +1,4 @@
-import ParallaxOwl from "../components/ParallaxOwl";
+
 
 export default function Registration() {
   return (
