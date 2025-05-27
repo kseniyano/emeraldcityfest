@@ -1,18 +1,20 @@
 import { useEffect } from "react";
-//import { ReactComponent as Calendar } from '../assets/calendar.svg';
-//import { ReactComponent as MapPin } from "../assets/map-pin.svg";
+import { useLocation } from "react-router-dom";
 
 export default function Info() {
+  const location = useLocation();
 
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const el = document.querySelector(hash);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
+    if (location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
     }
-  }, []);
+  }, [location]);
+
 
   return (
     <>
