@@ -82,12 +82,11 @@
     @apply text-3xl font-bold text-emerald hover:text-accent;
   }
   .container-width{
+    @apply xl:max-w-[1440px];
     width: 100%;
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    @apply px-[1.5rem] sm:px-[2rem] md:px-[3rem] lg:px-[4.5rem] 2xl:px-[6rem];
     position: relative;
   }
   .btn{
