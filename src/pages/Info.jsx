@@ -28,44 +28,44 @@ export default function Info() {
             className="object-contain"
           />
         </div>
-        <div className="flex flex-col basis-6 grow-2 gap-8">
+        <div className="flex flex-col w-full xl:w-auto xl:basis-6 xl:grow-2 gap-8">
           <div className="flex flex-col items-end gap-2"> 
             <h2 className="">О Фестивале</h2>
             <h5 className="text-right">Nevermore 5 — это международный фестиваль ЧГК, который в 2025 году снова соберёт команды из разных стран, чтобы сыграть вместе в один уикенд. В этом году одно из зеркал пройдёт в Сиэтле — и мы с удовольствием зовём вас присоединиться!</h5>
-            <div className="flex gap-6">
-              <p className="font-bold text-32"><img src="/assets/calendar.svg" alt="" className="w-18 h-18 inline" />13–14 сентября 2025</p>
-              <p className="font-bold text-32"><img src="/assets/map-pin.svg" alt="" className="w-18 h-18 inline" />Сиэтл</p>
+            <div className="flex flex-wrap justify-end sm:flex-nowrap gap-0 sm:gap-6">
+              <p className="font-bold text-3xl sm:text-32 text-right"><img src="/assets/calendar.svg" alt="" className="w-14 h-14 sm:w-18 sm:h-18 inline" />13–14 сентября 2025</p>
+              <p className="font-bold text-3xl sm:text-32 text-right"><img src="/assets/map-pin.svg" alt="" className="w-14 h-14 sm:w-18 sm:h-18 inline" />Сиэтл</p>
             </div>
           </div>
           <div>
             <h4 className="mb-3">Формат</h4>
-            <div className="grid grid-cols-2 gap-x-6 p-6 border border-primary-300 rounded-2xl">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 gap-x-6 p-6 border border-primary-300 rounded-2xl">
               <div className="flex flex-col gap-6">
                 <div className="text-center">
                   <p className="font-bold text-primary-500">Главное</p>
-                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Основная дисциплина</p>
+                  <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Основная дисциплина</p>
                   <h5 className="font-bold">6 туров по 15 вопросов</h5>
                 </div>
                 <div className="text-center">
-                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Эрудит-квартет</p>
+                  <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Эрудит-квартет</p>
                   <h5 className="font-bold">48 тем</h5>
                 </div>
               </div>
               <div className="flex flex-col gap-6">
                 <div className="text-center">
                   <p className="font-bold text-primary-500">+ Бонусы</p>
-                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Кубок Ржевского</p>
+                  <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Кубок Ржевского</p>
                   <h5 className="font-bold">внезапно</h5>
                 </div>
                 <div className="text-center">
-                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Музыкальный квиз</p>
+                  <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Музыкальный квиз</p>
                   <h5 className="font-bold">в баре</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex gap-6">
-            <div className="basis-0 grow-1 lg:grow-5">
+          <div className="flex flex-wrap sm:flex-nowrap gap-6">
+            <div className="w-full sm:w-auto sm:basis-0 sm:grow-1 lg:grow-5">
               <h4 className="mb-3">Редакторская группа турнира</h4>
               <div className="flex flex-wrap lg:flex-nowrap gap-4 mb-3 p-6 border border-primary-300 rounded-2xl">
                 <div className="grow">
@@ -91,7 +91,7 @@ export default function Info() {
                 <p className="text-emerald">Алматы</p>
               </div>
             </div>
-            <div className="basis-0 grow-1 lg:grow-3 flex flex-col">
+            <div className="w-full sm:w-auto sm:basis-0 sm:grow-1 lg:grow-3 flex flex-col">
               <h4 className="mb-3">География Nevermore 5</h4>
               <ul className="grow p-6 border border-primary-300 rounded-2xl">
                 <li className="mb-2">🇷🇺 Россия — Санкт-Петербург</li>
@@ -108,48 +108,75 @@ export default function Info() {
       </div>
       <div id="schedule" className="scroll-mt-28 mb-24">
         <h2 className="text-center mb-8">Расписание</h2>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6">
           <div className="flex flex-col items-stretch">
-            <div className="min-h-[72px] mb-8">
-              <h3 className="text-center">Суббота, 13* сентября</h3>
+            <div className="lg:min-h-[72px] mb-6 lg:mb-8">
+              <h3 className="text-center lg:text-32 xl:text-[2.5rem]">
+                <span className="hidden sm:inline">Суббота, 13* сентября</span>
+                <span className="inline sm:hidden">Суббота,<br />13* сентября</span>
+              </h3>
               <p className="text-center font-bold text-emerald">*все совпадения случайны</p>
             </div>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">10:00 - 11:00</h4>
-              <h5 className="basis-0 grow-1 ">Регистрация команд и открытие фестиваля</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">10:00 - 10:30</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Регистрация команд и открытие фестиваля</h5>
             </div>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">11:00 - 13:00</h4>
-              <h5 className="basis-0 grow-1 ">Два тура ЧГК</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">10:30 - 12:45</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">1-2 туры ЧГК</h5>
             </div>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">13:00 - 14:00</h4>
-              <h5 className="basis-0 grow-1 ">Перерыв / Обед</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">12:45 - 13:00</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Подача апелляций</h5>
             </div>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">14:00 - 15:00</h4>
-              <h5 className="basis-0 grow-1 ">Третий тур ЧГК</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">13:00 - 14:00</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Перерыв / Обед</h5>
             </div>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">15:00 - 18:00</h4>
-              <h5 className="basis-0 grow-1 ">Эрудит-квартет</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">14:00 - 15:00</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">3-ий тур ЧГК</h5>
+            </div>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 17:30</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Четвертьфиналы и полуфиналы Эрудит-Квартета</h5>
+            </div>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">17:30 - 18:30</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Полуфиналы свояка (если будет)</h5>
+            </div>
+            <h5 className="text-center mb-4 text-primary-500">Переезд в бар</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">19:00 - 22:00</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Посиделки, квиз, Ржевский</h5>
             </div>
 
           
           </div>
           <div className="flex flex-col items-stretch">
-            <h3 className="text-center min-h-[70px] mb-8">Воскресенье, 14 сентября</h3>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">10:00 - 11:00</h4>
-              <h5 className="basis-0 grow-1 ">Три тура ЧГК</h5>
+            <h3 className="text-center lg:text-32 xl:text-[2.5rem] lg:min-h-[72px] mb-6 lg:mb-8">
+              <span className="hidden sm:inline">Воскресенье, 14 сентября</span>
+              <span className="inline sm:hidden">Воскресенье,<br />14 сентября</span>
+            </h3>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">10:00 - 13:30</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">4-6 туры ЧГК</h5>
             </div>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">11:00 - 13:00</h4>
-              <h5 className="basis-0 grow-1 ">Работа АЖ</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">13:30 - 14:00</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Подача апелляций, перестрелка</h5>
             </div>
-            <div className="flex gap-6 mb-6">
-              <h4 className="basis-0 grow-1 text-emerald text-right">13:00 - 14:00</h4>
-              <h5 className="basis-0 grow-1 ">Финал Эрудит Квартета</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">14:00 - 15:00</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Финал Эрудит-Квартета</h5>
+            </div>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">15:00 - 15:30</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Финал свояка (если будет)</h5>
+            </div>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 sm:grow-1 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 16:00</h5>
+              <h5 className="basis-0 grow-3 sm:grow-1 ">Награждение, закрытие турнира</h5>
             </div>
 
           
@@ -159,12 +186,10 @@ export default function Info() {
     </div> 
     <div id="location" className="scroll-mt-28 bg-neutral-darker">
       <div className="container-width pt-16 mb-24">
-        <div className="grid grid-cols-2 gap-6 pb-24">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-24">
+          <div className="hidden lg:block">
             <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.79899939997!2d-122.36691092376711!3d47.64947267119381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490155d3ab58973%3A0x1ac970a9724fc5a0!2sGwinn%20Commons!5e0!3m2!1sen!2sus!4v1748208850151!5m2!1sen!2sus" 
-            width="100%" 
-            height="100%" 
             allowFullScreen="" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
@@ -181,6 +206,14 @@ export default function Info() {
               <h4>Парковка</h4>
               <h5 className="">TBD</h5>
             </div>
+          </div>
+          <div className="block lg:hidden">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.79899939997!2d-122.36691092376711!3d47.64947267119381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490155d3ab58973%3A0x1ac970a9724fc5a0!2sGwinn%20Commons!5e0!3m2!1sen!2sus!4v1748208850151!5m2!1sen!2sus" 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-[300px]"></iframe>
           </div>
           
         </div>
