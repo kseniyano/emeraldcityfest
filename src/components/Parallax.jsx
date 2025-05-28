@@ -22,7 +22,15 @@ const Parallax = () => {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed top-0 left-0 w-full h-screen -z-10">
+    <>
+    <div className="fixed pointer-events-none sm:hidden top-0 w-full h-screen -z-10">
+      <img
+        src="/assets/spaceneedle-mobile.png"
+        alt="Space Needle"
+        className="absolute h-screen left-1/2 -translate-x-1/2 object-cover opacity-10"
+      />
+    </div>
+    <div className="hidden sm:block pointer-events-none fixed top-0 left-0 w-full h-screen -z-10">
       <img
         src="/assets/spaceneedle.png"
         alt="Space Needle"
@@ -60,7 +68,7 @@ const Parallax = () => {
         data-depth="0.25"
       />
     </div>
-    
+     </>
   );
 };
 

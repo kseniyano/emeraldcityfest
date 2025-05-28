@@ -1,9 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
+import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import TopMenu from './TopMenu';
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
   const dropdownRef = useRef(null);
 
   // 🔸 Close when clicking outside
@@ -18,16 +22,29 @@ export default function NavBar() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [menuOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   // 🔸 Close menu on link click
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
 
   return (
-    <div className={`sticky top-0 z-50 bg-neutral-light transition-all duration-300 ${menuOpen ? '' : 'border-b border-primary-300'}`}>
+    
+    <div
+        className={`sticky top-0 z-50 transition-all duration-300 
+          ${menuOpen || scrolled ? 'bg-neutral-light' : ''} 
+          ${!isHome ? 'border-b border-primary-300' : ''}`}
+      >
       <div className="container-width py-6 flex items-center justify-between">
-        <Link to="/">
-          <div className="logo-text">Emerald City Fest</div>
+        <Link to="/" className=''>
+          <div className={`logo-text ${isHome ? 'hidden' : ''}`}>Emerald City Fest</div>
         </Link>
 
         {/* Burger button */}

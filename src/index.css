@@ -37,7 +37,7 @@
 
   h1 {
     font-family: "El Messiri";
-    @apply text-[2.75rem] sm:text-[4rem] lg:text-[5rem] xl:text-[6.5rem] 2xl:text-[7rem];
+    @apply text-[6rem] sm:text-[4rem] lg:text-[5rem] xl:text-[6.5rem] 2xl:text-[7rem];
     line-height: 1;
 
   }
@@ -75,7 +75,7 @@
 
 @layer components{
   .subtitle-home{
-    @apply text-[2.25rem] sm:text-[3.5rem] lg:text-[4rem] xl:text-[5.5rem] 2xl:text-[6rem];
+    @apply text-[3.75rem] sm:text-[3.5rem] lg:text-[4rem] xl:text-[5.5rem] 2xl:text-[6rem];
   }
   .home-h3{
     @apply text-[1.5rem] sm:text-[2rem] xl:text-[2.5rem];
@@ -134,5 +134,8 @@
   .text-32{
     font-size: 2rem;
     line-height: 1.2;
+  }
+  .h-screen-minus-navbar{
+    height: calc(100vh - 80px);
   }
 }

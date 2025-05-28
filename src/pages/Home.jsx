@@ -1,23 +1,25 @@
 import React from "react";
 import TopMenu from "../components/TopMenu";
 import Parallax from  "../components/Parallax";
+import NavBar from "../components/NavBar";
 
 
 export default function Home() {
   return (
   <>
     <Parallax />
+    <NavBar />
     <div className="container-width relative">
-      <div className="flex flex-col h-screen items-end justify-between py-28">
-        <TopMenu />
+      <div className="flex flex-col h-screen-minus-navbar items-end justify-between pb-20 sm:pb-28">
+        <div className="h-0 w-0"></div>
         <div className="flex flex-col items-end gap-4">
-          <h1 className="text-emerald text-right">Emerald City Fest</h1>
-          <div className="flex flex-col items-end">
-            <h1 className="subtitle-home text-right" >Nevermore 5</h1>
-            <h3 className="text-right home-h3">13-14 Сентября 2025, Сиэтл</h3>
+          <h1 className="text-emerald text-center sm:text-right">Emerald City Fest</h1>
+          <div className="flex flex-col items-center w-full sm:w-autosm:items-end">
+            <h1 className="subtitle-home text-center sm:text-right" >Nevermore 5</h1>
+            <h3 className="text-center sm:text-right home-h3">13-14 Сентября 2025, Сиэтл</h3>
           </div>
         </div>
-        <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn">Регистрация</a>
+        <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto">Регистрация</a>
       </div>
     </div>
     
