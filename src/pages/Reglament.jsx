@@ -9,7 +9,7 @@ export default function Reglament() {
       </div>
       <div className="p-6 border rounded-2xl border-primary-300 w-full h-[500px]">
         <div className="flex flex-col justify-center items-center h-full"> 
-          <h4 className="">Ждём от Жени</h4>
+          <h4 className="">TBD</h4>
         </div>
       </div>
     </div>
