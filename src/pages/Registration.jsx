@@ -5,7 +5,7 @@ export default function Registration() {
     <>
     <div className="container-width pt-16 mb-24">
       <div className="flex flex-col items-end gap-2 mb-8"> 
-            <h2 className="text-accent">Регистрация</h2>
+            <h2 className="">Регистрация</h2>
             <h5 className="text-right">Для бронирования участия необходимо внести депозит в размере $100. Даже если вы ещё раздумываете над участием,
 пожалуйста, зарегистрируйтесь заранее — это поможет нам лучше организовать площадку и учесть ваш интерес.</h5>
       </div>  

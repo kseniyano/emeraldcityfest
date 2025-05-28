@@ -6,7 +6,7 @@ export default function Teams() {
   <>
         <div className="container-width pt-16 mb-24">
           <div className="flex flex-col items-end gap-2 mb-8"> 
-            <h2 className="text-emerald_dark"> Команды</h2>
+            <h2 className=""> Команды</h2>
             <h5>Кто уже участвует</h5>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-6 w-full items-stretch">

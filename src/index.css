@@ -46,6 +46,7 @@
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 700;
+    @apply text-accent;
   }
   h3 {
     font-family: "Carlito";

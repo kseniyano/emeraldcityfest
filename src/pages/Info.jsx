@@ -20,7 +20,7 @@ export default function Info() {
     <>
     <div className="container-width pt-16 mb-24">
       <div id="about" className="scroll-mt-28 flex flex-row gap-6 mb-24">
-        <div className="flex basis-0 grow-1 place-center">
+        <div className="hidden xl:flex basis-0 grow-1 place-center">
           <img
             src="/assets/raven_info.png"
             alt="EmeraldCityFest"
@@ -30,7 +30,7 @@ export default function Info() {
         </div>
         <div className="flex flex-col basis-6 grow-2 gap-8">
           <div className="flex flex-col items-end gap-2"> 
-            <h2 className="text-accent">О Фестивале</h2>
+            <h2 className="">О Фестивале</h2>
             <h5 className="text-right">Nevermore 5 — это международный фестиваль ЧГК, который в 2025 году снова соберёт команды из разных стран, чтобы сыграть вместе в один уикенд. В этом году одно из зеркал пройдёт в Сиэтле — и мы с удовольствием зовём вас присоединиться!</h5>
             <div className="flex gap-6">
               <p className="font-bold text-32"><img src="/assets/calendar.svg" alt="" className="w-18 h-18 inline" />13–14 сентября 2025</p>
@@ -43,32 +43,32 @@ export default function Info() {
               <div className="flex flex-col gap-6">
                 <div className="text-center">
                   <p className="font-bold text-primary-500">Главное</p>
-                  <p className="text-32 text-emerald">Основная дисциплина</p>
+                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Основная дисциплина</p>
                   <h5 className="font-bold">6 туров по 15 вопросов</h5>
                 </div>
                 <div className="text-center">
-                  <p className="text-32 text-emerald">Эрудит-квартет</p>
+                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Эрудит-квартет</p>
                   <h5 className="font-bold">48 тем</h5>
                 </div>
               </div>
               <div className="flex flex-col gap-6">
                 <div className="text-center">
                   <p className="font-bold text-primary-500">+ Бонусы</p>
-                  <p className="text-32 text-emerald">Кубок Ржевского</p>
+                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Кубок Ржевского</p>
                   <h5 className="font-bold">внезапно</h5>
                 </div>
                 <div className="text-center">
-                  <p className="text-32 text-emerald">Музыкальный квиз</p>
+                  <p className="text-32 sm:text-2xl md:text-3xl lg:text-32 text-emerald">Музыкальный квиз</p>
                   <h5 className="font-bold">в баре</h5>
                 </div>
               </div>
             </div>
           </div>
           <div className="flex gap-6">
-            <div className="basis-0 grow-5">
+            <div className="basis-0 grow-1 lg:grow-5">
               <h4 className="mb-3">Редакторская группа турнира</h4>
-              <div className="grid grid-cols-2 gap-x-6 mb-3 p-6 border border-primary-300 rounded-2xl">
-                <div>
+              <div className="flex flex-wrap lg:flex-nowrap gap-4 mb-3 p-6 border border-primary-300 rounded-2xl">
+                <div className="grow">
                   <h5 className="font-bold">Алексей Бороненко</h5>
                   <p className="text-emerald mb-3">Москва</p>
                   <h5 className="font-bold">Юлия Дидбаридзе</h5>
@@ -76,7 +76,7 @@ export default function Info() {
                   <h5 className="font-bold">Дария Жылкыбаева</h5>
                   <p className="text-emerald">Алматы</p>
                 </div>
-                <div>
+                <div className="grow">
                   <h5 className="font-bold">Артём Колесов</h5>
                   <p className="text-emerald mb-3">Москва</p>
                   <h5 className="font-bold">Темирлан Сафаргалиев</h5>
@@ -91,7 +91,7 @@ export default function Info() {
                 <p className="text-emerald">Алматы</p>
               </div>
             </div>
-            <div className="basis-0 grow-3 flex flex-col">
+            <div className="basis-0 grow-1 lg:grow-3 flex flex-col">
               <h4 className="mb-3">География Nevermore 5</h4>
               <ul className="grow p-6 border border-primary-300 rounded-2xl">
                 <li className="mb-2">🇷🇺 Россия — Санкт-Петербург</li>
@@ -107,7 +107,7 @@ export default function Info() {
         </div>  
       </div>
       <div id="schedule" className="scroll-mt-28 mb-24">
-        <h2 className="text-accent text-center mb-8">Расписание</h2>
+        <h2 className="text-center mb-8">Расписание</h2>
         <div className="grid grid-cols-2 gap-6">
           <div className="flex flex-col items-stretch">
             <div className="min-h-[72px] mb-8">
@@ -171,7 +171,7 @@ export default function Info() {
             className="w-full h-full"></iframe>
           </div>
           <div>
-            <h2 className="text-accent text-right mb-6">Место Проведения Игр</h2>
+            <h2 className="text-right mb-6">Место Проведения Игр</h2>
             <div className="p-6 border border-primary-300 rounded-2xl">
               <h3>Seattle Pacific University</h3>
               <h5 className="font-bold mb-4">Gwinn Commons / Upper Gwinn Hall, 3 этаж</h5>
