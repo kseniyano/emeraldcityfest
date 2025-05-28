@@ -9,6 +9,8 @@ import Teams from './pages/Teams';
 import Registration from './pages/Registration';
 import Reglament from './pages/Reglament';
 import Footer from './components/Footer';
+import NotFound from "./pages/NotFound";
+
 
 function AppContent() {
   const location = useLocation();
@@ -25,6 +27,7 @@ function AppContent() {
           <Route path="/teams" element={<Teams />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/reglament" element={<Reglament />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       {!isHome &&  <Footer />}
