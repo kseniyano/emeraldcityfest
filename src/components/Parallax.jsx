@@ -22,7 +22,7 @@ const Parallax = () => {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed top-0 left-0 w-full h-screen -z-10 overflow-hidden">
+    <div className="pointer-events-none fixed top-0 left-0 w-full h-screen -z-10">
       <img
         src="/assets/spaceneedle.png"
         alt="Space Needle"

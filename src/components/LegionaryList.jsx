@@ -50,7 +50,7 @@
         {legionaries.map((legionary, index) => (
           <li key={index}>
             <div className="flex justify-between">
-              <div className="flex gap-4">
+              <div className="flex gap-2 xl:gap-4">
                 <p>{legionary.id}.</p>
                 <a
                   href={`https://rating.chgk.info/player/${legionary.id_rating}`}

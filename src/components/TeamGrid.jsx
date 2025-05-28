@@ -61,7 +61,7 @@
 
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       {teams.map((team, index) => (
         <div key={index} className="p-6 border rounded-2xl border-primary-300">
           <h4 className="text-xl font-semibold">{team.id}. {team.name}</h4>
@@ -72,7 +72,7 @@
           <ul>
             {team.players.map((player, idx) => (
               <ol key={idx} className={idx === 0 ? "font-bold" : ""}>
-                <div className="flex gap-4">
+                <div className="flex gap-2 xl:gap-4">
                   <p className="min-w-7ch text-right">{player.id}</p>
                   <p>{player.name}</p>
                 </div>
