@@ -10,7 +10,7 @@ export default function Home() {
     <Parallax />
     <NavBar />
     <div className="container-width relative">
-      <div className="flex flex-col h-screen-minus-navbar items-end justify-between pb-20 sm:pb-28">
+      <div className="flex flex-col h-screen-minus-navbar items-end justify-between pb-24 sm:pb-28">
         <div className="h-0 w-0"></div>
         <div className="flex flex-col items-end gap-4">
           <h1 className="text-emerald text-center sm:text-right">Emerald City Fest</h1>
