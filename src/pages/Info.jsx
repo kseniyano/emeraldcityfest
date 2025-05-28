@@ -93,15 +93,14 @@ export default function Info() {
             </div>
             <div className="w-full sm:w-auto sm:basis-0 sm:grow-1 lg:grow-3 flex flex-col">
               <h4 className="mb-3">География Nevermore 5</h4>
-              <ul className="grow p-6 border border-primary-300 rounded-2xl">
-                <li className="mb-2">🇷🇺 Россия — Санкт-Петербург</li>
-                <li className="mb-2">🇧🇾 Беларусь — Минск</li>
-                <li className="mb-2">🇰🇿 Казахстан — Алматы</li>
-                <li className="mb-2">🇪🇸 Испания — Барселона</li>
-                <li className="mb-2">🇱🇻 Латвия — Саулкрасти</li>
-                <li className="mb-2">🇺🇸 США — Сиэтл</li>
-              </ul>
-
+              <div className=" flex flex-col flex-wrap justify-center items-center grow p-6 border border-primary-300 rounded-2xl">
+                <h5 className="mb-4 w-full text-center font-bold">Россия <span className="text-emerald">Санкт-Петербург</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Беларусь <span className="text-emerald">Минск</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Казахстан <span className="text-emerald">Алматы</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Испания <span className="text-emerald">Барселона</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Латвия <span className="text-emerald">Саулкрасти</span></h5>
+                <h5 className="w-full text-center font-bold">США <span className="text-emerald">Сиэтл</span></h5>
+              </div>
             </div>
           </div>
         </div>  
