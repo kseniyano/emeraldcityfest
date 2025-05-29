@@ -110,7 +110,7 @@ export default function Info() {
         </div>  
       </div>
       <div id="schedule" className="scroll-mt-28 mb-24">
-        <h2 className="text-center mb-8">Предварительное расписание</h2>
+        <h2 className="text-center mb-8 text-[2.75rem] sm:text-[3rem]">Предварительное расписание</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6">
           <div className="flex flex-col items-stretch">
             <div className="lg:min-h-[72px] mb-6 lg:mb-8">
