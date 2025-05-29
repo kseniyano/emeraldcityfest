@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function TopMenu({ vertical = false, onLinkClick }) {
   const common = "menu-item";
-  const layout = vertical ? "flex flex-col gap-4 items-end" : "flex lg:gap-4 xl:gap-8";
+  const layout = vertical ? "flex flex-col gap-4 items-end" : "flex lg:gap-4 xl:gap-8 items-center";
 
   return (
     <nav className={`nav-links ${layout}`}>
@@ -12,6 +12,7 @@ export default function TopMenu({ vertical = false, onLinkClick }) {
       <Link to="/registration" className={common} onClick={onLinkClick}>Регистрация</Link>
       <Link to="/teams" className={common} onClick={onLinkClick}>Команды</Link>
       <Link to="/reglament" className={common} onClick={onLinkClick}>Регламент</Link>
+      <a href="https://t.me/+ig7u7dEkGps0OWYx" target="_blank" rel="noopener noreferrer" className="btn telegram-menu">Telegram</a>
     </nav>
   );
 }

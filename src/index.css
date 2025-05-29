@@ -81,13 +81,13 @@
     @apply text-[1.5rem] sm:text-[2rem] xl:text-[2.5rem];
   }
   .menu-item{
-    font-size: 1.25rem;
+    @apply text-[1.25rem] lg:text-[1.125rem] xl:text-[1.25rem];
     line-height: 1.2;
-    @apply text-primary-900 hover:text-accent;
+    @apply text-primary-900 hover:text-accent text-center;
   }
   .logo-text{
     font-family: "El Messiri";
-    @apply text-3xl font-bold text-emerald hover:text-accent;
+    @apply text-3xl lg:text-2xl xl:text-3xl font-bold text-emerald hover:text-accent;
   }
   .container-width{
     @apply xl:max-w-[1440px];
@@ -102,7 +102,11 @@
     text-center text-neutral-light text-xl sm:text-2xl font-bold 
     hover:text-neutral-light 
     hover:bg-emerald_dark transition-colors;
-    
+  }
+  .telegram-menu{
+    @apply py-2 px-4;
+    @apply text-[1.25rem] lg:text-[1.125rem] xl:text-[1.25rem];
+    line-height: 1.2;
   }
   .hero-image {
   position: absolute;

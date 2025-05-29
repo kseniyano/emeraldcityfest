@@ -40,7 +40,7 @@ export default function Info() {
           <div>
             <h4 className="mb-3">Формат</h4>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 gap-x-6 p-6 border border-primary-300 rounded-2xl">
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-4">
                 <div className="text-center">
                   <p className="font-bold text-primary-500">Главное</p>
                   <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Основная дисциплина</p>
@@ -48,10 +48,14 @@ export default function Info() {
                 </div>
                 <div className="text-center">
                   <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Эрудит-квартет</p>
-                  <h5 className="font-bold">48 тем</h5>
+                  <h5 className="font-bold">обязательно</h5>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Своя игра</p>
+                  <h5 className="font-bold">но это не точно</h5>
                 </div>
               </div>
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-6 justify-center">
                 <div className="text-center">
                   <p className="font-bold text-primary-500">+ Бонусы</p>
                   <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Кубок Ржевского</p>
@@ -106,7 +110,7 @@ export default function Info() {
         </div>  
       </div>
       <div id="schedule" className="scroll-mt-28 mb-24">
-        <h2 className="text-center mb-8">Расписание</h2>
+        <h2 className="text-center mb-8">Предварительное расписание</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6">
           <div className="flex flex-col items-stretch">
             <div className="lg:min-h-[72px] mb-6 lg:mb-8">
@@ -142,12 +146,12 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">17:30 - 18:30</h5>
-              <h5 className="basis-0 grow-3 ">Полуфиналы свояка (если будет)</h5>
+              <h5 className="basis-0 grow-3 ">Полуфиналы СИ (если будет)</h5>
             </div>
             <h5 className="text-center mb-4 text-primary-500">Переезд в бар</h5>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">19:00 - 22:00</h5>
-              <h5 className="basis-0 grow-3 ">Посиделки, квиз, Ржевский</h5>
+              <h5 className="basis-0 grow-3 ">Посиделки, Муз квиз, Ржевский</h5>
             </div>
 
           
@@ -171,7 +175,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:00 - 15:30</h5>
-              <h5 className="basis-0 grow-3 ">Финал свояка (если будет)</h5>
+              <h5 className="basis-0 grow-3 ">Финал СИ (если будет)</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 16:00</h5>

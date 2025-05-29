@@ -27,7 +27,8 @@ export default function Registration() {
           </div>
           <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
             <p className="text-32 mb-8 text-center">Способы оплаты</p>
-            <div className="flex flex-wrap justify-center sm:flex-nowrap gap-4 sm:gap-12 mb-8">
+            <h4 className="text-emerald text-center mb-4">Информация об оплате появится в ближайшее время</h4>
+            <div className="hidden flex flex-wrap justify-center sm:flex-nowrap gap-4 sm:gap-12 mb-8">
                 <div className="flex flex-col items-center w-full sm:w-auto">
                   <h3 className="font-bold text-emerald text-center">PayPal</h3>
                   <h4 className="text-center">@paypal</h4>
@@ -41,13 +42,15 @@ export default function Registration() {
                   <h4 className="text-center">@venmo</h4>
                 </div>
             </div>
-            <p className="font-bold text-center">В комментарии к переводу указывайте название команды</p>
+            <p className="hidden font-bold text-center">В комментарии к переводу указывайте название команды</p>
           </div>
-          <div className="flex flex-wrap sm:flex-nowrap gap-6">
+          <div className="flex flex-wrap sm:flex-nowrap gap-6 mb-6">
             <a href="https://tinyurl.com/EmeraldCityFestTeams" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow">Регистрация команд</a>
             <a href="https://tinyurl.com/EmeraldCityFestLegion" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow">Регистрация легионеров</a>
           </div>
+          <h4 className="w-full text-center">*Регистрация на Свою Игру будет открыта позже</h4>
         </div>
+
         <div className="hidden lg:block lg:basis-0 lg:grow-1 relative ">
            <img
             src="/assets/owl.png"
