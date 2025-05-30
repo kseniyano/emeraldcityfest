@@ -98,7 +98,7 @@
     position: relative;
   }
   .btn{
-    @apply bg-accent py-6 px-12 rounded-full 
+    @apply bg-accent py-4 sm:py-6 px-12 rounded-full 
     text-center text-neutral-light text-xl sm:text-2xl font-bold 
     hover:text-neutral-light 
     hover:bg-emerald_dark transition-colors;

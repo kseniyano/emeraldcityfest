@@ -14,7 +14,7 @@ export default function Home() {
         <div className="h-0 w-0"></div>
         <div className="flex flex-col items-end gap-4">
           <h1 className="text-emerald text-center sm:text-right">Emerald City Fest</h1>
-          <div className="flex flex-col items-center w-full sm:w-auto sm:items-end">
+          <div className="flex flex-col items-center w-full sm:w-auto sm:items-end mb-6">
             <h1 className="subtitle-home text-center sm:text-right" >Nevermore 5</h1>
             <h3 className="text-center sm:text-right home-h3">13-14 Сентября 2025, Сиэтл</h3>
           </div>
