@@ -7,7 +7,7 @@
 
   useEffect(() => {
       fetch(
-      "https://docs.google.com/spreadsheets/d/e/2PACX-1vRL5noEWj_BviUDanCRAbPKZsT43hl1dcBTAgQmOFyOsCDzdVaJjI3w7GbbsQxwykfXItOJ416PZjUx/pub?gid=0&single=true&output=csv"
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1noqIuaJOQd0rxcddL2_7YTJysA1cmRMiLmD1brhL7hadcgn5WVo6JxV7g1v5M55Q2_GIaeFrwPov/pub?gid=182700545&single=true&output=csv"
       )
       .then((res) => res.text())
       .then((csv) => {
