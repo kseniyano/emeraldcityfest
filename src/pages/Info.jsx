@@ -182,7 +182,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:00 - 15:30</h5>
-              <h5 className="basis-0 grow-3 ">Финал СИ (под вопросом)</h5>
+              <h5 className="basis-0 grow-3 ">Финал Своей Игры (под вопросом)</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 16:00</h5>

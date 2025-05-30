@@ -105,7 +105,7 @@
   }
   .telegram-menu{
     @apply py-2 px-4;
-    @apply text-[1.25rem] lg:text-[1.125rem] xl:text-[1.25rem];
+    @apply text-[1.25rem] lg:text-[1.125rem] xl:text-[1.25rem] font-normal;
     line-height: 1.2;
   }
   .hero-image {
@@ -140,6 +140,6 @@
     line-height: 1.2;
   }
   .h-screen-minus-navbar{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 88px);
   }
 }
