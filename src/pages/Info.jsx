@@ -121,37 +121,44 @@ export default function Info() {
               <p className="text-center font-bold text-emerald">*все совпадения случайны</p>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
-              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">10:00 - 10:30</h5>
-              <h5 className="basis-0 grow-3 ">Регистрация команд и открытие фестиваля</h5>
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">9:30 - 10:10</h5>
+              <h5 className="basis-0 grow-3 ">Письменный отбор Своей Игры (Water Hall, #202)</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
-              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">10:30 - 12:45</h5>
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">9:30 - 10:30</h5>
+              <h5 className="basis-0 grow-3 font-bold">Регистрация команд и открытие фестиваля (Upper Gwinn Hall)</h5>
+            </div>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">10:30 - 13:00</h5>
               <h5 className="basis-0 grow-3 ">1-2 туры ЧГК</h5>
-            </div>
-            <div className="flex gap-6 mb-4 sm:mb-6">
-              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">12:45 - 13:00</h5>
-              <h5 className="basis-0 grow-3 ">Подача апелляций</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">13:00 - 14:00</h5>
               <h5 className="basis-0 grow-3 ">Перерыв / Обед</h5>
             </div>
-            <div className="flex gap-6 mb-4 sm:mb-6">
+             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">14:00 - 15:00</h5>
               <h5 className="basis-0 grow-3 ">3-ий тур ЧГК</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
-              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 17:30</h5>
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:00 - 15:15</h5>
+              <h5 className="basis-0 grow-3 ">Подача апелляций</h5>
+            </div>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 18:00</h5>
               <h5 className="basis-0 grow-3 ">Четвертьфиналы и полуфиналы Эрудит-Квартета</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
-              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">17:30 - 18:30</h5>
-              <h5 className="basis-0 grow-3 ">Полуфиналы СИ (если будет)</h5>
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">18:00 - 18:30</h5>
+              <h5 className="basis-0 grow-3 ">Полуфиналы Своей Игры (под вопросом)</h5>
             </div>
-            <h5 className="text-center mb-4 text-primary-500">Переезд в бар</h5>
+            <div className="flex gap-6 mb-4 sm:mb-6">
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold"></h5>
+              <h5 className="basis-0 grow-3 text-primary-500">Переезд в бар</h5>
+            </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">19:00 - 22:00</h5>
-              <h5 className="basis-0 grow-3 ">Посиделки, Муз квиз, Ржевский</h5>
+              <h5 className="basis-0 grow-3 ">Посиделки, Ржевский, Муз квиз</h5>
             </div>
 
           
@@ -175,7 +182,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:00 - 15:30</h5>
-              <h5 className="basis-0 grow-3 ">Финал СИ (если будет)</h5>
+              <h5 className="basis-0 grow-3 ">Финал СИ (под вопросом)</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 16:00</h5>
