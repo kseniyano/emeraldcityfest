@@ -52,7 +52,7 @@ export default function Info() {
                 </div>
                 <div className="text-center">
                   <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Своя игра</p>
-                  <h5 className="font-bold">но это не точно</h5>
+                  <h5 className="font-bold">добровольно</h5>
                 </div>
               </div>
               <div className="flex flex-col gap-6 justify-center">
@@ -103,6 +103,7 @@ export default function Info() {
                 <h5 className="hidden mb-4 w-full text-center font-bold">Казахстан <span className="text-emerald">Алматы</span></h5>
                 <h5 className="mb-4 w-full text-center font-bold">Испания <span className="text-emerald">Барселона</span></h5>
                 <h5 className="mb-4 w-full text-center font-bold">Латвия <span className="text-emerald">Саулкрасти</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Грузия <span className="text-emerald">Тбилиси</span></h5>
                 <h5 className="w-full text-center font-bold">США <span className="text-emerald">Сиэтл</span></h5>
               </div>
             </div>
@@ -150,7 +151,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">18:00 - 18:30</h5>
-              <h5 className="basis-0 grow-3 ">Полуфиналы Своей Игры (под вопросом)</h5>
+              <h5 className="basis-0 grow-3 ">Полуфиналы Своей Игры</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold"></h5>
@@ -182,7 +183,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:00 - 15:30</h5>
-              <h5 className="basis-0 grow-3 ">Финал Своей Игры (под вопросом)</h5>
+              <h5 className="basis-0 grow-3 ">Финал Своей Игры</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 16:00</h5>

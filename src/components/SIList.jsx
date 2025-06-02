@@ -2,12 +2,12 @@
   import React, { useEffect, useState } from "react";
 
 
-  const LegionaryList = () => {
-  const [legionaries, setLegionaries] = useState([]);
+  const SIList = () => {
+  const [svoyachniki, setSvoyachniki] = useState([]);
 
   useEffect(() => {
       fetch(
-      "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1noqIuaJOQd0rxcddL2_7YTJysA1cmRMiLmD1brhL7hadcgn5WVo6JxV7g1v5M55Q2_GIaeFrwPov/pub?gid=182700545&single=true&output=csv"
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1noqIuaJOQd0rxcddL2_7YTJysA1cmRMiLmD1brhL7hadcgn5WVo6JxV7g1v5M55Q2_GIaeFrwPov/pub?gid=950809840&single=true&output=csv"
       )
       .then((res) => res.text())
       .then((csv) => {
@@ -33,36 +33,28 @@
 
               return {
               id: entry.id,
-              id_rating: entry.id_rating,
               name: entry.name,
               city: entry.city,
+              team: entry.team,
               };
           })
           .filter(Boolean);
 
-          setLegionaries(result);
+          setSvoyachniki(result);
       });
   }, []);
 
 
   return (
       <ul>
-        {legionaries.map((legionary, index) => (
+        {svoyachniki.map((svoyachnik, index) => (
           <li key={index}>
             <div className="flex justify-between">
               <div className="flex gap-3 xl:gap-4">
-                <p className="w-[2ch]">{legionary.id}.</p>
-                <a
-                  href={`https://rating.chgk.info/player/${legionary.id_rating}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=""
-                >
-                  <p className="min-w-7ch text-right">{legionary.id_rating}</p>
-                </a>
-                <p>{legionary.name}</p>
+                <p className="w-[2ch]">{svoyachnik.id}.</p>
+                <p>{svoyachnik.name} ({svoyachnik.team})</p>
               </div>
-              <p className="text-right">{legionary.city}</p>
+              <p className="text-right">{svoyachnik.city}</p>
             </div>
           </li>
         ))}
@@ -70,5 +62,5 @@
   );
 };
 
-export default LegionaryList;
+export default SIList;
 

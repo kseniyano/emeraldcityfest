@@ -20,8 +20,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row w-full sm:w-auto gap-4">
-          <a href="/info" target="" rel="noopener noreferrer" className="btn w-full sm:w-auto">О Фестивале</a>
-          <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto">Регистрация</a>
+          <a href="/info" target="" rel="noopener noreferrer" className="btn px-12 w-full sm:w-auto">О Фестивале</a>
+          <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn px-12 w-full sm:w-auto">Регистрация</a>
         </div>
       </div>
     </div>

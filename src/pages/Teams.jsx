@@ -1,5 +1,6 @@
 import LegionaryList from "../components/LegionaryList";
 import TeamGrid from "../components/TeamGrid";
+import SIList from "../components/SIList";
 
 export default function Teams() {
   return (
@@ -23,6 +24,12 @@ export default function Teams() {
                   <br/>По вопросам контактов легионеров пишите в Telegram: <a href="https://t.me/kseniyano" target="_blank" rel="noopener noreferrer">@kseniyano</a>
                 </p>
                 <LegionaryList />
+              </div>
+
+              <h3 className="mt-6">Своя игра</h3>
+              <p className="mb-6">Игроки, зарегистрировавшиеся на Свою Игру<br />В порядке подачи заявок</p>
+              <div className="p-6 border rounded-2xl border-primary-300 grow">
+                <SIList />
               </div>
             </div>
           </div>

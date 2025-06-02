@@ -68,9 +68,9 @@
           <div className="flex w-full justify-between items-center mb-6">
             <h5 className="text-accent">{team.city}</h5>
             <div>
-              <i class={`fa-solid fa-list text-[1.5rem] mr-3 ${team.players && team.players.length > 0 ? 'text-emerald' : ' text-primary-100'}`} title="Состав команды внесён"></i>
-              <i class={`fa-solid fa-dollar-sign text-[1.5rem] mr-3  ${team.deposit === "Yes" ? 'text-emerald' : ' text-primary-100'}`} title="Депозит оплачен"></i>
-              <i class={`fa-solid fa-sack-dollar text-[1.5rem] ${team.fee === 'Yes' ? 'text-emerald' : ' text-primary-100'}`} title="Взнос оплачен полностью"></i>
+              <i className={`fa-solid fa-list text-[1.5rem] mr-3 ${team.players && team.players.length > 0 ? 'text-emerald' : ' text-primary-100'}`} title="Состав команды внесён"></i>
+              <i className={`fa-solid fa-dollar-sign text-[1.5rem] mr-3  ${team.deposit === "Yes" ? 'text-emerald' : ' text-primary-100'}`} title="Депозит оплачен"></i>
+              <i className={`fa-solid fa-sack-dollar text-[1.5rem] ${team.fee === 'Yes' ? 'text-emerald' : ' text-primary-100'}`} title="Взнос оплачен полностью"></i>
             </div>
           </div>
           <ul>

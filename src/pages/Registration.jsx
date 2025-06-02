@@ -23,7 +23,7 @@ export default function Registration() {
                   <h3 className="font-bold text-emerald text-center">$360 USD</h3>
                 </div>
             </div>
-            <p className="font-bold text-center">ВАЖНО! Указывайте сумму, которую получит адресат. Комиссия PayPal оплачивается отправителем.</p>
+            <p className="hidden font-bold text-center">ВАЖНО! Указывайте сумму, которую получит адресат. Комиссия PayPal оплачивается отправителем.</p>
           </div>
           <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
             <p className="text-32 mb-8 text-center">Способы оплаты</p>
@@ -44,13 +44,15 @@ export default function Registration() {
             </div>
             <p className="hidden font-bold text-center">В комментарии к переводу указывайте название команды</p>
           </div>
-          <div className="flex flex-wrap sm:flex-nowrap gap-6 mb-6">
-            <a href="https://tinyurl.com/EmeraldCityFestTeams" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация команд</a>
-            <a href="https://tinyurl.com/EmeraldCityFestLegion" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация легионеров</a>
-            {/* <a href="https://tinyurl.com/EmeraldCityFestSI" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация на Свою Игру</a> */}
+          <div className="flex flex-wrap gap-6 mb-6">
+            <div className="flex flex-wrap sm:flex-nowrap gap-6 grow">
+              <a href="https://tinyurl.com/EmeraldCityFestTeams" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация команд</a>
+              <a href="https://tinyurl.com/EmeraldCityFestLegion" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация легионеров</a>
+            </div>
+            <a href="https://tinyurl.com/EmeraldCityFestSI" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация на Свою Игру</a>
             
           </div>
-          <h4 className="w-full text-center">*Регистрация на Свою Игру будет открыта позже</h4>
+          {/* <h4 className="w-full text-center">*Регистрация на Свою Игру будет открыта позже</h4> */}
         </div>
 
         <div className="hidden lg:block lg:basis-0 lg:grow-1 relative ">
