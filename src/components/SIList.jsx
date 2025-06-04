@@ -52,7 +52,8 @@
             <div className="flex justify-between">
               <div className="flex gap-3 xl:gap-4">
                 <p className="w-[2ch]">{svoyachnik.id}.</p>
-                <p>{svoyachnik.name} ({svoyachnik.team})</p>
+                <p className="hidden sm:inline">{svoyachnik.name} ({svoyachnik.team})</p>
+                <p className="sm:hidden">{svoyachnik.name}<br/>({svoyachnik.team})</p>
               </div>
               <p className="text-right">{svoyachnik.city}</p>
             </div>
