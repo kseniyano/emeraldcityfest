@@ -117,6 +117,9 @@
   object-position: left;
   transition: transform 0.1s ease-out;
   }
+  .obfuscated{
+    
+  }
 }
 
 @layer utilities{

@@ -1,6 +1,15 @@
-
+import React, { useEffect, useRef } from "react";
 
 export default function Registration() {
+  const linkRef = useRef(null);
+
+  useEffect(() => {
+    const email = "kss.kovaleva@gmail.com";
+    if (linkRef.current) {
+      linkRef.current.textContent = email;
+    }
+  }, []);
+
   return (
     <>
     <div className="container-width pt-16 mb-24">
@@ -23,26 +32,27 @@ export default function Registration() {
                   <h3 className="font-bold text-emerald text-center">$360 USD</h3>
                 </div>
             </div>
-            <p className="hidden font-bold text-center">ВАЖНО! Указывайте сумму, которую получит адресат. Комиссия PayPal оплачивается отправителем.</p>
+            
           </div>
           <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
             <p className="text-32 mb-8 text-center">Способы оплаты</p>
-            <h4 className="text-emerald text-center mb-4">Информация об оплате появится в ближайшее время</h4>
-            <div className="hidden flex flex-wrap justify-center sm:flex-nowrap gap-4 sm:gap-12 mb-8">
+            <h4 className="hidden text-emerald text-center mb-4">Информация об оплате появится в ближайшее время</h4>
+            <div className="flex flex-wrap justify-center sm:flex-nowrap gap-4 sm:gap-12 mb-8">
                 <div className="flex flex-col items-center w-full sm:w-auto">
                   <h3 className="font-bold text-emerald text-center">PayPal</h3>
-                  <h4 className="text-center">@paypal</h4>
-                </div>
-                <div className="flex flex-col items-center w-full sm:w-auto">
-                  <h3 className="font-bold text-emerald text-center">Zelle</h3>
-                  <h4 className="text-center">@zelle</h4>
+                  <a href="https://www.paypal.me/kseniyano" target="_blank"><h4 className="text-center">Оплатить</h4></a>
                 </div>
                 <div className="flex flex-col items-center w-full sm:w-auto">
                   <h3 className="font-bold text-emerald text-center">Venmo</h3>
-                  <h4 className="text-center">@venmo</h4>
+                  <a href="https://www.venmo.com/u/kseniyano" target="_blank"><h4 className="text-center">Оплатить</h4></a>
+                </div>
+                <div className="flex flex-col items-center w-full sm:w-auto">
+                  <h3 className="font-bold text-emerald text-center">Zelle</h3>
+                  <h4 className="text-center obfuscated" ref={linkRef}>[email protected]</h4>
                 </div>
             </div>
-            <p className="hidden font-bold text-center">В комментарии к переводу указывайте название команды</p>
+            <p className="font-bold text-center">В комментарии к переводу указывайте название команды</p>
+            <p className="font-bold text-center">ВАЖНО: при отправке в валюте, отличной от USD, указывайте сумму, которую должен получить адресат. Комиссию оплачивает отправитель.</p>
           </div>
           <div className="flex flex-wrap gap-6 mb-6">
             <div className="flex flex-wrap sm:flex-nowrap gap-6 grow">
