@@ -123,7 +123,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">9:30 - 10:10</h5>
-              <h5 className="basis-0 grow-3 ">Письменный отбор Своей Игры (Water Hall, #202)</h5>
+              <h5 className="basis-0 grow-3 ">Письменный отбор Своей Игры (Weter Hall, #202)</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">9:30 - 10:30</h5>
