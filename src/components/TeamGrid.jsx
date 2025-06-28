@@ -31,7 +31,7 @@ const [teams, setTeams] = useState([]);
         const result = parsed.data
           .map((entry, i) => {
             if (!entry.name && !entry.city && !entry.players) {
-              console.warn(`Skipping empty row at line ${i + 2}`);
+              //console.warn(`Skipping empty row at line ${i + 2}`);
               return null;
             }
 
