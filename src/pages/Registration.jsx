@@ -15,11 +15,14 @@ export default function Registration() {
     <div className="container-width pt-16 mb-24">
       <div className="flex flex-col items-end gap-2 mb-8"> 
             <h2 className="">Регистрация</h2>
-            <h5 className="text-right">Для бронирования участия необходимо внести депозит в размере $100. Даже если вы ещё раздумываете над участием,
-пожалуйста, зарегистрируйтесь заранее — это поможет нам лучше организовать площадку и учесть ваш интерес.</h5>
       </div>  
       <div className="flex gap-6">
         <div className="w-full lg:w-auto lg:basis-6 lg:grow-2">
+          <h5 className="mb-6">
+              <span className="font-bold">Важно: </span>Зал вмещает <span className="font-bold">максимум 16 команд</span>.
+              <br/>Если вы планируете участвовать — не откладывайте регистрацию!
+              <br/>Для бронирования участия необходимо внести депозит в размере $100.
+          </h5>
           <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
             <p className="text-32 mb-8 text-center">Стоимость участия</p>
             <div className="flex flex-wrap justify-center sm:flex-nowrap gap-8 mb-8">
