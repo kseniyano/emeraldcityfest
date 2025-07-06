@@ -99,11 +99,12 @@ export default function Info() {
               <h4 className="mb-3">География Nevermore 5</h4>
               <div className=" flex flex-col flex-wrap justify-center items-center grow p-6 border border-primary-300 rounded-2xl">
                 <h5 className="mb-4 w-full text-center font-bold">Россия <span className="text-emerald">Санкт-Петербург</span></h5>
-                <h5 className="hidden mb-4 w-full text-center font-bold">Беларусь <span className="text-emerald">Минск</span></h5>
-                <h5 className="hidden mb-4 w-full text-center font-bold">Казахстан <span className="text-emerald">Алматы</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Беларусь <span className="text-emerald">Минск</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Казахстан <span className="text-emerald">Алматы</span></h5>
                 <h5 className="mb-4 w-full text-center font-bold">Испания <span className="text-emerald">Барселона</span></h5>
                 <h5 className="mb-4 w-full text-center font-bold">Латвия <span className="text-emerald">Саулкрасти</span></h5>
                 <h5 className="mb-4 w-full text-center font-bold">Грузия <span className="text-emerald">Тбилиси</span></h5>
+                <h5 className="mb-4 w-full text-center font-bold">Германия <span className="text-emerald">Берлин</span></h5>
                 <h5 className="w-full text-center font-bold">США <span className="text-emerald">Сиэтл</span></h5>
               </div>
             </div>
