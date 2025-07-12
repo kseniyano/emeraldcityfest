@@ -19,9 +19,9 @@ export default function Registration() {
       <div className="flex gap-6">
         <div className="w-full lg:w-auto lg:basis-6 lg:grow-2">
           <h5 className="mb-6">
-              <span className="font-bold">Важно: </span>Зал вмещает <span className="font-bold">максимум 16 команд</span>.
-              <br/>Если вы планируете участвовать — не откладывайте регистрацию!
-              <br/>Для бронирования участия необходимо внести депозит в размере $100.
+              <span className="font-bold">Важно: Зал рассчитан на 16 команд, и все места на данный момент забронированы.</span>
+              <br/>Если вы хотите принять участие, пожалуйста, зарегистрируйтесь, но не оплачивайте депозит. Мы постараемся расширить количество мест, однако, к сожалению, не можем этого гарантировать. 
+              <br/>По всем вопросам пишите в Telegram: <a href="https://t.me/kseniyano" target="_blank" rel="noopener noreferrer">@kseniyano</a>
           </h5>
           <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
             <p className="text-32 mb-8 text-center">Стоимость участия</p>
