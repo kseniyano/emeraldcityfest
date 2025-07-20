@@ -38,7 +38,7 @@ const Parallax = () => {
         data-depth="0.05"
       />
       <img
-        src="/assets/raven.png"
+        src="/assets/raven_1.png"
         alt="Raven"
         className="parallax-layer hero-image"
         data-depth="0.2"

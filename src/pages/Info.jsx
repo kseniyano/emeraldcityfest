@@ -22,7 +22,7 @@ export default function Info() {
       <div id="about" className="scroll-mt-28 flex flex-row gap-6 mb-24">
         <div className="hidden xl:flex basis-0 grow-1 place-center">
           <img
-            src="/assets/raven_info.png"
+            src="/assets/raven_info_1.png"
             alt="EmeraldCityFest"
             title="..регистрируйся..."
             className="object-contain"
