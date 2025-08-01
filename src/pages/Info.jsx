@@ -59,11 +59,11 @@ export default function Info() {
                 <div className="text-center">
                   <p className="font-bold text-primary-500">+ Бонусы</p>
                   <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Кубок Ржевского</p>
-                  <h5 className="font-bold">внезапно</h5>
+                  <h5 className="font-bold">в баре</h5>
                 </div>
                 <div className="text-center">
                   <p className="text-3xl sm:text-2xl md:text-3xl lg:text-32 text-emerald">Музыкальный квиз</p>
-                  <h5 className="font-bold">в баре</h5>
+                  <h5 className="font-bold">но это не точно</h5>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:30 - 18:00</h5>
-              <h5 className="basis-0 grow-3 ">Четвертьфиналы и полуфиналы Эрудит-Квартета</h5>
+              <h5 className="basis-0 grow-3 ">Четвертьфиналы и полуфиналы Эрудит-квартета</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">18:00 - 18:30</h5>
@@ -180,7 +180,7 @@ export default function Info() {
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">14:00 - 15:00</h5>
-              <h5 className="basis-0 grow-3 ">Финал Эрудит-Квартета</h5>
+              <h5 className="basis-0 grow-3 ">Финал Эрудит-квартета</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
               <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">15:00 - 15:30</h5>
