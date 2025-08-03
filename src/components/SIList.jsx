@@ -40,14 +40,14 @@ const [svoyachniki, setSvoyachniki] = useState([]);
       {svoyachniki.map((svoyachnik, index) => (
         <li key={index}>
           <div className="flex justify-between">
-            <div className="flex gap-3 xl:gap-4">
+            <div className="flex gap-3 xl:gap-4 mb-2">
               <p className="w-[2ch]">{svoyachnik.id}.</p>
-              <p className="hidden sm:inline">
+              {/* <p className="hidden sm:inline">
                 {svoyachnik.name} ({svoyachnik.team})
-              </p>
-              <p className="sm:hidden">
+              </p> */}
+              <p className="inline">
                 {svoyachnik.name}
-                <br />({svoyachnik.team})
+                <br /><span className="text-primary-500">({svoyachnik.team})</span>
               </p>
             </div>
             <p className="text-right">{svoyachnik.city}</p>
