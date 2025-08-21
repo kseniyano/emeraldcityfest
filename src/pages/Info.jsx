@@ -223,7 +223,7 @@ export default function Info() {
               <a href="https://maps.app.goo.gl/9Hd81EZMn2W9jafg8" className="" target="_blank">
                 <h4 className="mb-2 flex items-center text-emerald"><img src="/assets/pin.svg" alt="" className="mr-2 inline" />Dravus Lot</h4>
               </a>
-              <h6 className="">Важно: Dravus Lot — это выделенный для нас паркинг. Парковка бесплатная.<br/> Стоянка на других лотах кампуса может привести к штрафу или эвакуации автомобиля.</h6>
+              <p className="font-bold">Важно: Dravus Lot — это выделенный для нас паркинг. Парковка бесплатная.<br/> Стоянка на других лотах кампуса может привести к штрафу или эвакуации автомобиля.</p>
             </div>
           </div>
           <div className="block lg:hidden">
