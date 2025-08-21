@@ -19,7 +19,7 @@ export default function Registration() {
       <div className="flex gap-6">
         <div className="w-full lg:w-auto lg:basis-6 lg:grow-2">
           <h5 className="mb-6">
-              <span className="font-bold">Важно: Зал рассчитан на 18 команд, осталось одно место.</span>
+              <span className="font-bold">Важно: Зал рассчитан на 18 команд, осталось два места.</span>
               <br/>По всем вопросам пишите в Telegram: <a href="https://t.me/kseniyano" target="_blank" rel="noopener noreferrer">@kseniyano</a>
           </h5>
           <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">

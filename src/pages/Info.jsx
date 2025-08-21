@@ -159,8 +159,8 @@ export default function Info() {
               <h5 className="basis-0 grow-3 text-primary-500">Переезд в бар</h5>
             </div>
             <div className="flex gap-6 mb-4 sm:mb-6">
-              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">19:00 - 22:00</h5>
-              <h5 className="basis-0 grow-3 ">Посиделки, Ржевский, Муз квиз</h5>
+              <h5 className="basis-0 grow-2 text-emerald text-right sm:text-[1.5rem] font-bold">19:00 - 21:30</h5>
+              <h5 className="basis-0 grow-3 ">Посиделки, Кубок Ржевского</h5>
             </div>
 
           
@@ -210,13 +210,20 @@ export default function Info() {
           <div>
             <h2 className="text-right mb-6">Место Проведения Игр</h2>
             <div className="p-6 border border-primary-300 rounded-2xl">
-              <h3>Seattle Pacific University</h3>
-              <h5 className="font-bold mb-4">Gwinn Commons / Upper Gwinn Hall, 3 этаж</h5>
-              <a href="https://maps.app.goo.gl/BJ8GfeNmMTycFMLD6" className="" target="_blank"><h4 className="mb-6 flex items-center text-emerald"><img src="/assets/map-pin.svg" alt="" className="w-8 h-8 inline" />3310 6th Ave W, Seattle, WA 98119</h4></a>
+              <h3 className="mb-4">Seattle Pacific University</h3>
+              <h4 className="">Gwinn Commons / Upper Gwinn Hall, 3 этаж</h4>
+              <a href="https://maps.app.goo.gl/BJ8GfeNmMTycFMLD6" className="" target="_blank">
+                <h4 className="mb-6 flex items-center text-emerald"><img src="/assets/pin.svg" alt="" className="mr-2 inline" />3310 6th Ave W, Seattle, WA 98119</h4>
+              </a>
               <h4>Зал для Эрудит-квартета</h4>
-              <h5 className="mb-4">Weter Hall #202</h5>
+              <a href="https://maps.app.goo.gl/GjWGNz6DqUm8PxE3A" className="" target="_blank">
+                <h4 className="mb-6 flex items-center text-emerald"><img src="/assets/pin.svg" alt="" className="mr-2 inline" />Weter Hall #202</h4>
+              </a>
               <h4>Парковка</h4>
-              <h5 className="">TBD</h5>
+              <a href="https://maps.app.goo.gl/9Hd81EZMn2W9jafg8" className="" target="_blank">
+                <h4 className="mb-2 flex items-center text-emerald"><img src="/assets/pin.svg" alt="" className="mr-2 inline" />Dravus Lot</h4>
+              </a>
+              <h6 className="">Важно: Dravus Lot — это выделенный для нас паркинг. Парковка бесплатная.<br/> Стоянка на других лотах кампуса может привести к штрафу или эвакуации автомобиля.</h6>
             </div>
           </div>
           <div className="block lg:hidden">
