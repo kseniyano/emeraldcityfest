@@ -19,7 +19,7 @@ const [teams, setTeams] = useState([]);
 
   useEffect(() => {
     fetch(
-      "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1noqIuaJOQd0rxcddL2_7YTJysA1cmRMiLmD1brhL7hadcgn5WVo6JxV7g1v5M55Q2_GIaeFrwPov/pub?gid=0&single=true&output=csv"
+      "https://docs.google.com/spreadsheets/d/1mwDnfJqAd1t9QFbKYUMGlhPrkzgPqY0EQ8zdI4tAxxg/gviz/tq?tqx=out:csv&sheet=Teams"
     )
       .then((res) => res.text())
       .then((csvText) => {
