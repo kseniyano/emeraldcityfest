@@ -109,16 +109,56 @@
     line-height: 1.2;
   }
   .hero-image {
-  position: absolute;
-  height: 100vh;
-  min-width: 140vh; 
-  left: calc(25vw - (100vh * 1.4) * 0.25);
-  object-fit: cover;
-  object-position: left;
-  transition: transform 0.1s ease-out;
+    position: absolute;
+    height: 100vh;
+    min-width: 140vh; 
+    left: calc(25vw - (100vh * 1.4) * 0.25);
+    object-fit: cover;
+    object-position: left;
+    transition: transform 0.1s ease-out;
   }
-  .obfuscated{
-    
+
+  .level-1 {
+    counter-reset: item; /* reset top-level counter */
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .level-1 > li {
+    counter-increment: item; /* increment top-level counter */
+  }
+
+  .level-1 > li::before {
+    content: counter(item) ". "; /* shows 1. 2. 3. */
+    @apply mr-2 sm:mr-4;
+  }
+
+  .level-2 {
+    counter-reset: subitem; /* reset sub-level counter */
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    @apply mt-4 mb-4 pl-2 sm:pl-5;
+  }
+
+  .level-2 > li {
+    @apply relative pl-8 sm:pl-12 mb-1;   /* create space for number (pl = padding-left) */
+    text-indent: -0;         /* keep text aligned inside */
+    counter-increment: subitem;
+  }
+
+  .level-2 > li::before {
+    content: counter(item) "." counter(subitem);
+    @apply absolute left-0 w-6 sm:w-8 text-right; /* fixed-width number column */
+  }
+
+  .unnumlist {
+    list-style-type: disc;   /* default solid dot */
+    padding-left: 20px;      /* space for bullets */
+    @apply pt-2;
   }
 }
 
