@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col xl:flex-row w-full sm:w-auto gap-4">
           <a href="/info" target="" rel="noopener noreferrer" className="btn px-12 w-full sm:w-auto">О Фестивале</a>
-          <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn px-12 w-full sm:w-auto">Регистрация</a>
+          <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn px-12 w-full sm:w-auto hidden">Регистрация</a>
           <a href="https://docs.google.com/spreadsheets/d/1Zla3SZtXbtE9RDaQlKtt3vklxsO6fPujoHIYBQNcXnk/edit?usp=sharing" 
           target="_blank" rel="noopener noreferrer" className="hidden btn px-8 w-full sm:w-auto">Результаты</a>
           <div className="hidden flex flex-col lg:flex-row w-full sm:w-auto gap-4">

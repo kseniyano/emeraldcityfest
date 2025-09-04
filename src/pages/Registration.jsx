@@ -19,7 +19,7 @@ export default function Registration() {
       <div className="flex gap-6">
         <div className="w-full lg:w-auto lg:basis-6 lg:grow-2">
           <h5 className="mb-6">
-              <span className="font-bold">Важно: Зал рассчитан на 18 команд, осталось два места.</span>
+              <span className="font-bold">Важно: Зал рассчитан на 16 команд, все места заняты.</span>
               <br/>По всем вопросам пишите в Telegram: <a href="https://t.me/kseniyano" target="_blank" rel="noopener noreferrer">@kseniyano</a>
           </h5>
           <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
@@ -58,7 +58,7 @@ export default function Registration() {
           </div>
           <div className="flex flex-wrap gap-6 mb-6">
             <div className="flex flex-wrap sm:flex-nowrap gap-6 grow">
-              <a href="https://tinyurl.com/EmeraldCityFestTeams" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация команд</a>
+              <a href="https://tinyurl.com/EmeraldCityFestTeams" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl hidden">Регистрация команд</a>
               <a href="https://tinyurl.com/EmeraldCityFestLegion" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация легионеров</a>
             </div>
             <a href="https://tinyurl.com/EmeraldCityFestSI" target="_blank" rel="noopener noreferrer" className="btn w-full sm:w-auto sm:grow text-xl">Регистрация на Свою Игру</a>
