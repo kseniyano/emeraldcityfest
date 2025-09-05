@@ -73,20 +73,24 @@ export default function Info() {
               <h4 className="mb-3">Редакторская группа турнира</h4>
               <div className="flex flex-wrap lg:flex-nowrap gap-4 mb-3 p-6 border border-primary-300 rounded-2xl">
                 <div className="grow">
-                  <h5 className="font-bold text-center sm:text-left">Алексей Бороненко</h5>
-                  <p className="text-emerald mb-3 text-center sm:text-left">Москва</p>
+                  <p className="font-bold text-primary-500 mb-2">День 1</p>
+                  <h5 className="font-bold text-center sm:text-left">Дария Жылкыбаева</h5>
+                  <p className="text-emerald mb-3 text-center sm:text-left">Алматы</p>
                   <h5 className="font-bold text-center sm:text-left">Юлия Дидбаридзе</h5>
                   <p className="text-emerald mb-3 text-center sm:text-left">Хайфа</p>
-                  <h5 className="font-bold text-center sm:text-left">Дария Жылкыбаева</h5>
-                  <p className="text-emerald text-center sm:text-left">Алматы</p>
+                  <h5 className="font-bold text-center sm:text-left">Алексей Бороненко</h5>
+                  <p className="text-emerald text-center sm:text-left">Москва</p>
+                  
+                  
                 </div>
                 <div className="grow">
+                  <p className="font-bold text-primary-500 mb-2">День 2</p>
                   <h5 className="font-bold text-center sm:text-left">Артём Колесов</h5>
                   <p className="text-emerald mb-3 text-center sm:text-left">Москва</p>
-                  <h5 className="font-bold text-center sm:text-left">Темирлан Сафаргалиев</h5>
-                  <p className="text-emerald mb-3 text-center sm:text-left">Астана</p>
                   <h5 className="font-bold text-center sm:text-left">Дмитрий Стальнухин</h5>
-                  <p className="text-emerald text-center sm:text-left">Таллинн</p>
+                  <p className="text-emerald mb-3 text-center sm:text-left">Таллинн</p>
+                  <h5 className="font-bold text-center sm:text-left">Темирлан Сафаргалиев</h5>
+                  <p className="text-emerald text-center sm:text-left">Астана</p>
                 </div>
               </div>
               <h4 className="mb-3">Редактор ЭК</h4>
