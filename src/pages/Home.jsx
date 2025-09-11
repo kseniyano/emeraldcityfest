@@ -19,15 +19,19 @@ export default function Home() {
             <h3 className="text-center sm:text-right home-h3">13-14 Сентября 2025, Сиэтл</h3>
           </div>
         </div>
-        <div className="flex flex-col xl:flex-row w-full sm:w-auto gap-4">
-          <a href="/info" target="" rel="noopener noreferrer" className="btn px-12 w-full sm:w-auto">О Фестивале</a>
-          <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn px-12 w-full sm:w-auto hidden">Регистрация</a>
-          <a href="https://docs.google.com/spreadsheets/d/1Zla3SZtXbtE9RDaQlKtt3vklxsO6fPujoHIYBQNcXnk/edit?usp=sharing" 
-          target="_blank" rel="noopener noreferrer" className="hidden btn px-8 w-full sm:w-auto">Результаты</a>
-          <div className="hidden flex flex-col lg:flex-row w-full sm:w-auto gap-4">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScHAt2To-FCwV0FGLZjnzX9UulSR7_O4o1D9AxKXPRcyuWSkg/viewform"
-            target="_blank" rel="noopener noreferrer" className="btn px-8 w-full sm:w-auto">Апелляция ИЖ</a>
-            <a href="/info" rel="noopener noreferrer" className="btn px-8 w-full sm:w-auto">Апелляция АЖ</a>
+        <div className="flex flex-col items-end w-full sm:w-auto gap-4">
+          <div className="flex flex-col xl:flex-row flex-wrap w-full sm:w-auto sm:max-w-1/2 gap-4">
+            <a href="/info" target="" rel="noopener noreferrer" className="btn px-8 py-4 w-full sm:w-auto min-w-[230px]">О Фестивале</a>
+            <a href="https://docs.google.com/spreadsheets/d/1Y0y5i8RQjVBUpvx-WqdT784VjqSg6ZCFq5XMYdGoDWU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn px-8 py-4 w-full sm:w-auto min-w-[230px]">Таблица ОД</a>
+          </div>
+          <div className="flex flex-col xl:flex-row flex-wrap w-full sm:w-auto sm:max-w-1/2 gap-4">
+            <a href="https://docs.google.com/spreadsheets/d/1Zla3SZtXbtE9RDaQlKtt3vklxsO6fPujoHIYBQNcXnk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn px-8 py-4 w-full sm:w-auto min-w-[230px]">Таблица ЭК</a>
+            <a href="https://docs.google.com/spreadsheets/d/1sixKz9b7HoPtEihFNPh5bWGGDjREVlz-C_I_MenoL9w/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn px-8 py-4 w-full sm:w-auto min-w-[230px]">Таблица СИ</a>
+          </div>
+          <div className="flex flex-col xl:flex-row flex-wrap w-full sm:w-auto sm:max-w-1/2 gap-4">
+            <a href="https://forms.gle/sXXiXAijkQuFBR9Q6" target="_blank" rel="noopener noreferrer" className="btn px-8 py-4 w-full sm:w-auto min-w-[230px]">Спорные. ИЖ</a>
+            <a href="https://forms.gle/WmB3wsGHncuNEmBi6" target="_blank" rel="noopener noreferrer" className="btn px-8 py-4 w-full sm:w-auto min-w-[230px]">Апелляции. АЖ</a>
+            <a href="/registration" target="_blank" rel="noopener noreferrer" className="btn px-8 w-full sm:w-auto hidden">Регистрация</a>
           </div>
         </div>
       </div>
