@@ -36,7 +36,8 @@ export default function Registration() {
             </div>
             
           </div>
-          <div className="flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
+          <div className="h-[100px]"></div>
+          <div className="hidden flex flex-col items-center mb-6 p-6 border border-primary-300 rounded-2xl">
             <p className="text-32 mb-8 text-center">Способы оплаты</p>
             <h4 className="hidden text-emerald text-center mb-4">Информация об оплате появится в ближайшее время</h4>
             <div className="flex flex-wrap justify-center sm:flex-nowrap gap-4 sm:gap-12 mb-8">
